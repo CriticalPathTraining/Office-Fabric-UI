@@ -1,0 +1,18 @@
+﻿<h3>Users in Current Tenancy</h3>
+
+<div class="ms-Table">
+  <div class="ms-Table-row">
+    <span class="ms-Table-cell">&nbsp;</span>
+    <span class="ms-Table-cell">Given Name</span>
+    <span class="ms-Table-cell">Surname Name</span>
+    <span class="ms-Table-cell">Display Name</span>
+    <span class="ms-Table-cell">User Principal Name</span>
+  </div>
+  <div class="ms-Table-row ms-bgColor-neutralLighter--hover" ng-repeat="user in users">
+    <span class="ms-Table-cell"><i class="ms-Icon ms-Icon--person ms-font-l"></i></span>
+    <span class="ms-Table-cell">{{user.givenName}}</span>
+    <span class="ms-Table-cell">{{user.surname}}</span>
+    <span class="ms-Table-cell">{{user.displayName}}</span>
+    <span class="ms-Table-cell">{{user.userPrincipalName}}</span>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+﻿<h3>Contacts for Current User</h3>
+
+<div class="ms-Table">
+  <div class="ms-Table-row">
+    <span class="ms-Table-cell">&nbsp;</span>
+    <span class="ms-Table-cell">Given Name</span>
+    <span class="ms-Table-cell">Surname Name</span>
+    <span class="ms-Table-cell">Display Name</span>
+    <span class="ms-Table-cell">Business Phone</span>
+    <span class="ms-Table-cell">Email</span>
+  </div>
+  <div class="ms-Table-row ms-bgColor-neutralLighter--hover" ng-repeat="contact in contacts">
+    <span class="ms-Table-cell"><i class="ms-Icon ms-Icon--person ms-font-l"></i></span>
+    <span class="ms-Table-cell">{{contact.givenName}}</span>
+    <span class="ms-Table-cell">{{contact.surname}}</span>
+    <span class="ms-Table-cell">{{contact.displayName}}</span>
+    <span class="ms-Table-cell">{{contact.businessPhones[0]}}</span>
+    <span class="ms-Table-cell">{{contact.emailAddresses[0].address}}</span>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\AppIcon.png" Url="Content/AppIcon.png" ReplaceContent="TRUE" />
+    <File Path="Content\fabric.css" Url="Content/fabric.css" ReplaceContent="TRUE" />
+    <File Path="Content\fabric.components.css" Url="Content/fabric.components.css" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

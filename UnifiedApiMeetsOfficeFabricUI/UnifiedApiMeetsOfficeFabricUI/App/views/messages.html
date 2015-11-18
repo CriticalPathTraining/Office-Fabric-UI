@@ -1,0 +1,23 @@
+﻿
+<h3>Messages for Current User</h3>
+
+<table class="table table-striped table-bordered table-condensed table-hover">
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>From</th>
+      <th>Received</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-ng-repeat="message in messages">
+      <td>{{message.Subject}}</td>
+      <td>{{message.From.EmailAddress.Name}}</td>
+      <td>{{message.DateTimeReceived | date:'MM/dd/yy h:mma'}}</td>
+      <td><a href="#/message/{{message.Id}}" class="btn">View</a></td>
+      <td><input ng-click="actions.deleteMessage(message.Id)" class="btn" value="Delete" /></td>
+    </tr>
+  </tbody>
+</table>

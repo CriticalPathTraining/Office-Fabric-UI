@@ -1,0 +1,1 @@
+C:\CPT_Webinar_OfficeFabricUI\SPAddinWithOfficeFabricUI\SPAddinWithOfficeFabricUI\bin\Debug\SPAddinWithOfficeFabricUI.debugapp

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Fun with Office Fabric UI</title>
+    <meta charset="utf-8" />
+
+    <!--
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.components.min.css">
+    -->
+
+    <link href="../office-fabric-ui/css/fabric.css" rel="stylesheet" />
+    <link href="../office-fabric-ui/css/fabric.components.css" rel="stylesheet" />
+    <link href="app.css" rel="stylesheet" />
+
+    <script src="../Scripts/jquery-2.1.4.js"></script>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/angular-route.js"></script>
+    <script src="../office-fabric-ui/script/Jquery.DatePicker.js"></script>
+    <script src="../office-fabric-ui/script/Jquery.PersonaCard.js"></script>
+
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+    <script src="directives.js"></script>
+
+</head>
+<body ng-app="myApp">
+
+    <div id="page-body">
+
+        <header id="page-banner" class="ms-bgColor-black ms-Panel--large">
+            <span class="ms-fontColor-white ms-fontSize-xxl">
+                Fun with the Office Fabric UI
+            </span>
+        </header>
+
+        <nav class="">
+            <ul class="ms-NavBar">
+                <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#">Home</a></li>
+                <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/gridSystem">Grid System</a></li>
+                <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/icons">Icons</a></li>
+                <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/list">List</a></li>
+                <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/personaCard">Persona Card</a></li>
+                <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/inputComponents">Input Components</a></li>
+            </ul>
+        </nav>
+
+        <div id="view-container" ng-view></div>
+
+    </div>
+
+</body>
+</html>

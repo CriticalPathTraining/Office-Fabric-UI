@@ -1,0 +1,31 @@
+﻿<div class="ms-Grid">
+
+    <div class="ms-Grid-row">
+        <div id="content-main" class="ms-Grid-col ms-u-sm6 ms-u-md7 ms-u-lg9 ">
+            <h2 class="ms-font-l">{{pageContent.title}}</h2>
+            <p class="ms-font-mi" ng-repeat="paragraph in pageContent.paragraphs">
+                {{paragraph}}
+            </p>
+        </div>
+        <div id="sidebar-right" class="ms-Grid-col ms-u-sm6 ms-u-md5 ms-u-lg3 ">
+            <h4 class="ms-font-l">{{pageContent.sidebarTitle}}</h4>
+            <p class="ms-font-mi">{{pageContent.sidebarContent}}</p>
+        </div>
+    </div>
+
+    <div class="ms-Grid-row">
+        <div id="content-topic1" class="content-topic ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4 ">
+            <h4 class="ms-font-l">{{pageContent.topic1Title}}</h4>
+            <p class="ms-font-mi">{{pageContent.topic1Content}}</p>
+        </div>
+        <div id="content-topic1" class="content-topic ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4 ">
+            <h4 class="ms-font-l">{{pageContent.topic2Title}}</h4>
+            <p class="ms-font-mi">{{pageContent.topic2Content}}</p>
+        </div>
+        <div id="content-topic1" class="content-topic ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4 ">
+            <h4 class="ms-font-l">{{pageContent.topic3Title}}</h4>
+            <p class="ms-font-mi">{{pageContent.topic3Content}}</p>
+        </div>
+    </div>
+
+</div>

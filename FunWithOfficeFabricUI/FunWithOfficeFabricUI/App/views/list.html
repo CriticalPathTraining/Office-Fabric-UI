@@ -1,0 +1,19 @@
+﻿
+<h2>Instructor Lists</h2>
+
+<div class="ms-List" style="width:50%">
+
+    <div class="ms-ListItem ms-borderColor-blueLight ms-bgColor-neutralLight--hover" ng-repeat="customer in pageContent.customers">
+        <span class="ms-ListItem-image"><i class="ms-Icon ms-Icon--person ms-font-xxl"></i></span>
+        <span class="ms-ListItem-primaryText">{{customer.name}}</span>
+        <span class="ms-ListItem-secondaryText">{{customer.title}}</span>
+        <span class="ms-ListItem-tertiaryText">{{customer.description}}</span>
+        <span class="ms-ListItem-metaText">{{customer.metatext}}</span>
+        <div class="ms-ListItem-actions">
+            <div class="ms-ListItem-action"><i class="ms-Icon ms-Icon--attachment"></i></div>
+            <div class="ms-ListItem-action"><i class="ms-Icon ms-Icon--x"></i></div>
+            <div class="ms-ListItem-action"><i class="ms-Icon ms-Icon--flag"></i></div>
+        </div>
+    </div>
+    <div class="ms-Link ms-Button-icon"></div>
+</div>

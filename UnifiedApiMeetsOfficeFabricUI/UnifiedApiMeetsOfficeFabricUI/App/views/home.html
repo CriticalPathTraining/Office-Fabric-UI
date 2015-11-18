@@ -1,0 +1,23 @@
+﻿<div class="jumbotron">
+
+  <h3>Unified API Demo SPA</h3>
+
+  <div ng-hide="userInfo.isAuthenticated">
+    <p>Click Login link in the upper right corner to log in.</p>
+    <p>More content to come</p>
+
+  </div>
+
+
+  <div ng-show="userInfo.isAuthenticated">
+    <p>
+      Users is now logged in. Click the folloing link to see the contents of the OpenID Connect token.
+    </p>
+    <p>
+      <a href="#/userToken">User Token</a>
+    </p>
+    
+  </div>
+
+
+</div>

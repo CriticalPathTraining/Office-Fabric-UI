@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+  <title>Unified API Meets Office Fabric UI</title>
+
+  <link href="Content/fabric.css" rel="stylesheet" />
+  <link href="Content/fabric.components.css" rel="stylesheet" />
+  <link href="App/App.css" rel="stylesheet" />
+
+  <script src="Scripts/jquery-2.1.4.js"></script>
+  <script src="Scripts/angular.js"></script>
+  <script src="Scripts/angular-route.js"></script>
+  <script src="Scripts/angular-sanitize.js"></script>
+
+  <script src="Scripts/adal.js"></script>
+  <script src="Scripts/adal-angular.js"></script>
+
+  <script src="App/App.js"></script>
+  <script src="App/services/UnifiedApiService.js"></script>
+
+  <script src="App/controllers/navbarController.js"></script>
+  <script src="App/controllers/homeController.js"></script>
+  <script src="App/controllers/usersController.js"></script>
+  <script src="App/controllers/groupsController.js"></script>
+  <script src="App/controllers/usersController.js"></script>
+  <script src="App/controllers/userTokenController.js"></script>
+  <script src="App/controllers/contactsController.js"></script>
+
+
+</head>
+
+<body ng-app="myApp">
+
+  <div id="page-body">
+
+    <header id="page-banner" class="ms-bgColor-themeDark">
+      <span class="ms-fontColor-white ms-fontSize-xl">
+        Office 365 Unified API Meets the Office Fabric UI
+      </span>
+    </header>
+
+    <nav role="navigation" ng-controller="navbarController">
+
+      <ul class="ms-NavBar">
+        <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/">Home</a></li>
+        <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/users" ng-show="userInfo.isAuthenticated">Users</a></li>
+        <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/groups" ng-show="userInfo.isAuthenticated">Groups</a></li>
+        <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/contacts" ng-show="userInfo.isAuthenticated">Contacts</a></li>
+        <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/userToken" ng-show="userInfo.isAuthenticated">User Token</a></li>
+
+        <li class="ms-NavBar-item ms-NavBar-item--right">
+          <a class="ms-NavBar-link" ng-hide="userInfo.isAuthenticated" ng-click="login()">Login</a>
+        </li>
+
+        <li class="ms-NavBar-item ms-NavBar-item--right">
+          <a class="ms-NavBar-link" ng-show="userInfo.isAuthenticated" ng-click="logout()">Logout</a>
+        </li>
+
+
+        <li class="ms-NavBar-item ms-NavBar-item--right">
+          <span class="ms-fontColor-blue" ng-show="userInfo.isAuthenticated">Hello {{userInfo.profile["name"]}}</span>
+        </li>
+
+      </ul>
+    </nav>
+
+
+    <div id="view-container" ng-view></div>
+
+  </div>
+
+
+</body>
+
+</html>
+
+

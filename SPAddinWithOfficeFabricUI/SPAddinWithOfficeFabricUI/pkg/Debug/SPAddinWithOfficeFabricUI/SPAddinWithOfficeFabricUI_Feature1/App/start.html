@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Office Fabric UI Demo</title>
+  <meta charset="utf-8" />
+
+  <!--
+  <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+  <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.components.min.css">
+  -->
+  <link href="../Content/fabric.css" rel="stylesheet" />
+  <link href="../Content/fabric.components.css" rel="stylesheet" />
+  <link href="../Content/App.css" rel="stylesheet" />
+
+  <script src="../Scripts/jquery-2.1.4.js"></script>
+  <script src="../Scripts/angular.js"></script>
+  <script src="../Scripts/angular-route.js"></script>
+
+  <script src="jquery-extensions.js"></script>
+  <script src="App.js"></script>
+  <script src="services/wingtipCrmService.js"></script>
+  <script src="controllers/homeController.js"></script>
+  <script src="controllers/newController.js"></script>
+  <script src="controllers/viewController.js"></script>
+  <script src="controllers/editController.js"></script>
+  <script src="controllers/aboutController.js"></script>
+
+</head>
+<body ng-app="myApp">
+
+  <div id="page-body">
+
+    <header id="page-banner" class="ms-bgColor-themeDark">
+      <span class="ms-fontColor-white ms-fontSize-xl">
+        Demo of SharePoint-hosted Add-in using Office Fabrics UI
+      </span>
+    </header>
+
+    <nav>
+      <ul class="ms-NavBar">
+        <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/">Home</a></li>
+        <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/new">Add Customer</a></li>
+        <li class="ms-NavBar-item"><a class="ms-NavBar-link" href="#/about">About</a></li>
+        <li class="ms-NavBar-item ms-NavBar-item--right">
+          <a class="ms-NavBar-link" id="lnkHostWeb">Back to Host Web</a>
+        </li>
+      </ul>
+    </nav>
+
+ 
+      <div id="view-container" ng-view></div>
+
+</div>
+
+</body>
+</html>

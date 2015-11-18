@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="0117b966-63b0-447c-a1e9-04644cca1ab6" Scope="Web" Title="SPAddinWithOfficeFabricUI Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-2.1.4.min.map" />
+    <ElementFile Location="Scripts\jquery-2.1.4.min.js" />
+    <ElementFile Location="Scripts\jquery-2.1.4.js" />
+    <ElementFile Location="Scripts\jquery-2.1.4.intellisense.js" />
+    <ElementFile Location="Scripts\angular.min.js.map" />
+    <ElementFile Location="Scripts\angular.min.js" />
+    <ElementFile Location="Scripts\angular.js" />
+    <ElementFile Location="Scripts\angular-mocks.js" />
+    <ElementFile Location="Scripts\angular-route.min.js.map" />
+    <ElementFile Location="Scripts\angular-route.min.js" />
+    <ElementFile Location="Scripts\angular-route.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementFile Location="Content\AppIcon.png" />
+    <ElementFile Location="Content\fabric.css" />
+    <ElementFile Location="Content\fabric.components.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="App\Elements.xml" />
+    <ElementFile Location="App\start.html" />
+    <ElementFile Location="App\favicon.ico" />
+    <ElementFile Location="App\App.js" />
+    <ElementFile Location="App\jquery-extensions.js" />
+    <ElementFile Location="App\controllers\aboutController.js" />
+    <ElementFile Location="App\controllers\editController.js" />
+    <ElementFile Location="App\controllers\homeController.js" />
+    <ElementFile Location="App\controllers\newController.js" />
+    <ElementFile Location="App\controllers\viewController.js" />
+    <ElementFile Location="App\services\wingtipCrmService.js" />
+    <ElementFile Location="App\views\about.html" />
+    <ElementFile Location="App\views\edit.html" />
+    <ElementFile Location="App\views\home.html" />
+    <ElementFile Location="App\views\new.html" />
+    <ElementFile Location="App\views\view.html" />
+    <ElementManifest Location="Customers\Elements.xml" />
+    <ElementManifest Location="Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="App\Elements.xml" />
+        <ElementManifest Location="Customers\Elements.xml" />
+        <ElementManifest Location="Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

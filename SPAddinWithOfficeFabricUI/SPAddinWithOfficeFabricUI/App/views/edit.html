@@ -1,0 +1,48 @@
+﻿<h3>Edit Customer</h3>
+
+<div class="ms-CommandBar">
+
+  <button class="ms-CommandBarItem ms-Button ms-Button--command" data-ng-click="addCustomer()">
+    <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--save"></i></span>
+    <span class="ms-Button-label">Save</span>
+    <span class="ms-Button-description">Click this to update contact</span>
+  </button>
+
+  <button class="ms-CommandBarItem ms-Button ms-Button--command" data-ng-click="cancel()">
+    <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--x"></i></span>
+    <span class="ms-Button-label">Cancel</span>
+    <span class="ms-Button-description">Return to customer list</span>
+  </button>
+
+</div>
+
+<div class="ms-TextField is-required">
+  <label class="ms-Label">First Name</label>
+  <input class="ms-TextField-field" ng-model="customer.FirstName">
+  <span class="ms-TextField-description">enter your first name.</span>
+</div>
+
+
+<div class="ms-TextField is-required">
+  <label class="ms-Label">Last Name</label>
+  <input class="ms-TextField-field" ng-model="customer.Title">
+  <span class="ms-TextField-description">enter your last name.</span>
+</div>
+
+<div class="ms-TextField">
+  <label class="ms-Label">Work Phone</label>
+  <input class="ms-TextField-field" ng-model="customer.WorkPhone">
+  <span class="ms-TextField-description">enter your work phone.</span>
+</div>
+
+<div class="ms-TextField">
+  <label class="ms-Label">Home Phone</label>
+  <input class="ms-TextField-field" ng-model="customer.HomePhone">
+  <span class="ms-TextField-description">enter your home phone.</span>
+</div>
+
+<div class="ms-TextField">
+  <label class="ms-Label">Email Address</label>
+  <input class="ms-TextField-field" ng-model="customer.Email">
+  <span class="ms-TextField-description">enter your email address.</span>
+</div>

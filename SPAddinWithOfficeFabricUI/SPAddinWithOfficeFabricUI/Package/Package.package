@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="a0c23ed7-7675-4d42-a685-3558c5efd000" 
+        solutionId="a0c23ed7-7675-4d42-a685-3558c5efd000" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SPAddinWithOfficeFabricUI"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="0117b966-63b0-447c-a1e9-04644cca1ab6" />
+  </features>
+</package>

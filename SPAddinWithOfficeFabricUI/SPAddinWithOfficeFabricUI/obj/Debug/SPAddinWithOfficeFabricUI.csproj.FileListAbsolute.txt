@@ -1,0 +1,3 @@
+C:\CPT_Webinar_OfficeFabricUI\SPAddinWithOfficeFabricUI\SPAddinWithOfficeFabricUI\bin\Debug\SPAddinWithOfficeFabricUI.pdb
+C:\CPT_Webinar_OfficeFabricUI\SPAddinWithOfficeFabricUI\SPAddinWithOfficeFabricUI\obj\Debug\SPAddinWithOfficeFabricUI.dll
+C:\CPT_Webinar_OfficeFabricUI\SPAddinWithOfficeFabricUI\SPAddinWithOfficeFabricUI\obj\Debug\SPAddinWithOfficeFabricUI.pdb

@@ -1,0 +1,43 @@
+﻿<h3>View Customer</h3>
+
+<div class="ms-CommandBar">
+
+  <button class="ms-CommandBarItem ms-Button ms-Button--command" data-ng-click="editCustomer()">
+    <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--editBox"></i></span>
+    <span class="ms-Button-label">Edit</span>
+    <span class="ms-Button-description">Click this to enter edit mode</span>
+  </button>
+
+  <button class="ms-CommandBarItem ms-Button ms-Button--command" data-ng-click="cancel()">
+    <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--x"></i></span>
+    <span class="ms-Button-label">Cancel</span>
+    <span class="ms-Button-description">Return to customer list</span>
+  </button>
+
+</div>
+
+<div class="ms-TextField">
+  <label class="ms-Label">First Name</label>
+  <input class="ms-TextField-field" ng-bind="customer.FirstName" readonly="readonly" >
+</div>
+
+
+<div class="ms-TextField">
+  <label class="ms-Label">Last Name</label>
+  <input class="ms-TextField-field" ng-bind="customer.Title"  readonly="readonly" >
+</div>
+
+<div class="ms-TextField">
+  <label class="ms-Label">Work Phone</label>
+  <input class="ms-TextField-field" ng-bind="customer.WorkPhone"  readonly="readonly" >
+</div>
+
+<div class="ms-TextField">
+  <label class="ms-Label">Home Phone</label>
+  <input class="ms-TextField-field" ng-bind="customer.HomePhone"  readonly="readonly" >
+</div>
+
+<div class="ms-TextField">
+  <label class="ms-Label">Email Address</label>
+  <input class="ms-TextField-field" ng-bind="customer.Email"  readonly="readonly" >
+</div>

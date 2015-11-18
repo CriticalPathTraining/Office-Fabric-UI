@@ -1,0 +1,21 @@
+﻿
+<h3>Groups in Current Tenancy</h3>
+
+
+<div class="ms-Table">
+
+  <div class="ms-Table-row">
+    <span class="ms-Table-cell">&nbsp;</span>
+    <span class="ms-Table-cell">Display Name</span>
+    <span class="ms-Table-cell">Email Address</span>
+    <span class="ms-Table-cell">Group Type</span>
+  </div>
+
+  <div class="ms-Table-row ms-bgColor-neutralLighter--hover" ng-repeat="group in groups">
+    <span class="ms-Table-cell"><i class="ms-Icon ms-Icon--group ms-font-l"></i></span>
+    <span class="ms-Table-cell">{{group.displayName}}</span>
+    <span class="ms-Table-cell">{{group.mail}}</span>
+    <span class="ms-Table-cell">{{(group.groupTypes.length > 0) ? group.groupTypes[0] : "Security" }}</span>
+  </div>
+
+</div>
